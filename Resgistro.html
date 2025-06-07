@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Registro</title>
+    <script src="https://cdn.jsdelivr.net/npm/dexie@3.2.2/dist/dexie.min.js"></script>
+</head>
+<body>
+
+    <h1>Angel Daniel Vasquez Leal</h1>
+    <h2>Usuario GitHub: avasque25</h2>
+    <a href="https://github.com/avasque25" target="_blank">Mi Usuario de GitHub</a>
+
+    <section>
+        <div class="encabezado">
+            <div class="hijo-encabezado">
+                <div class="texto-encabezado">
+                    PersonaDB ¡Base de Datos!
+                </div>
+            </div>
+        </div>
+
+        <div id="caja-padre">
+            <div class="cont-form">
+                <form id="formulario">
+                    <input type="text" id="nombre" placeholder="NOMBRE" required>
+                    <input type="text" id="apellido" placeholder="APELLIDO" required>
+                    <input type="number" id="anioNacimiento" placeholder="AÑO DE NACIMIENTO" required>
+                    <input type="number" id="mesNacimiento" placeholder="MES DE NACIMIENTO (1-12)" required>
+                </form>
+            </div>
+
+            <div class="cont-boton">
+                <div class="cont-hijo">
+                    <div class="padre-boton">
+                        <input type="button" id="btn-guardar" value="Guardar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="lista-personas" style="width: 1000px; color: white; margin-top: 20px;"></div>
+    </section>
+
+    <script src="Resgistro.js"></script>
+</body>
+</html>
